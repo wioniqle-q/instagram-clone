@@ -6,7 +6,7 @@ import Logo from "./HeaderLogo/Logo";
 const Header = () => {
     return (
         <div className="border-b-2">
-            <div className="max-w-4xl mx-auto flex justify-between py-1 sm:py-3 items-center bg-white">
+            <div className="max-w-4xl mx-auto flex justify-between py-1 md:py-3 items-center bg-white">
                 <Logo />
                 <Search />
                 <Icons />

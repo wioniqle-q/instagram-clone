@@ -14,7 +14,7 @@ const Profile = () => {
                     </div>
                     <div className='pt-5 w-8/12'>
                         <div>
-                            <span className='text-lg sm:text-2xl font-bold'>Kullanıcı Adı </span>
+                            <span className='text-lg md:text-2xl font-bold'>Kullanıcı Adı </span>
                         </div>
                     </div>
                 </div>
