@@ -6,16 +6,18 @@ import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import { IconButton } from '@mui/material';
+import { Link, useParams } from 'react-router-dom';
 
 
 const Feed = () => {
+  const { userName } = useParams();
   return (
     <div className='my-5 w-full'>
       <div className='flex items-center justify-between p-3 border bg-white'>
         <div className='flex items-center'>
           <img src='https://cdn.pixabay.com/photo/2019/03/21/20/29/eyewear-4071870__340.jpg'
             alt='resim' className='rounded-full object-cover w-11 h-11' />
-          <span className='text-xs font-semibold px-2'>Kullanıcı ismi</span>
+          <Link to={`${userName}`} className='text-xs font-semibold px-2'>Kullanıcı ismi</Link>
         </div>
         <div>
           <MoreHorizIcon />
@@ -55,7 +57,7 @@ const Feed = () => {
         </div>
       </div>
     </div>
-    
+
   )
 }
 
