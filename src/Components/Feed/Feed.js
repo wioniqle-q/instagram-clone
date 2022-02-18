@@ -28,7 +28,7 @@ const Feed = () => {
       />
 
       <div className='bg-white'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between py-4'>
           <div>
             <IconButton>
               <FavoriteBorderRoundedIcon />
