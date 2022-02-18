@@ -4,6 +4,7 @@ import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
+import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import { IconButton } from '@mui/material';
 
 
@@ -45,14 +46,16 @@ const Feed = () => {
             </IconButton>
           </div>
         </div>
-        <div className='flex justify-between mt-5 p-3'>
-          <input  placeholder='Yorum yaz ...' className='w-full outline-none'/>
+        <div className='flex justify-between items-center mt-5 p-3'>
+          <SentimentSatisfiedAltIcon />
+          <input placeholder='Yorum yaz ...' className='w-full outline-none p-4' />
           <span className='px-3 cursor-pointer text-blue-700'>
             Paylaş
           </span>
         </div>
       </div>
     </div>
+    
   )
 }
 
