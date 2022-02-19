@@ -2,6 +2,9 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import HomePage from "./Pages/HomePage";
 import Profile from "./Components/Profile/Profile";
+import Messages from "./Components/Messages/Messages";
+import Explore from "./Components/Explore/Explore";
+
 
 
 function App() {
@@ -11,10 +14,12 @@ function App() {
         <Header />
       </div>
       <div className="max-w-4xl mx-auto min-h-screen">
-      <Switch>
-        <Route path={"/:username"} component={Profile} />
-        <Route exact path="/" component={HomePage} />
-      </Switch>
+        <Switch>
+          <Route exact path="/explore" component={Explore} />
+          <Route  path="/message" component={Messages} />
+          <Route  path={"/:username"} component={Profile} />
+          <Route exact path="/" component={HomePage} />
+        </Switch>
 
       </div>
     </div>

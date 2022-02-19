@@ -19,9 +19,9 @@ const Feed = () => {
             alt='resim' className='rounded-full object-cover w-11 h-11' />
           <Link to={`${userName}`} className='text-xs font-semibold px-2'>Kullanıcı ismi</Link>
         </div>
-        <div>
+        <IconButton>
           <MoreHorizIcon />
-        </div>
+        </IconButton>
       </div>
       <img
         src='https://cdn.pixabay.com/photo/2017/10/17/05/17/panda-2859555__340.jpg'

@@ -6,21 +6,28 @@ import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOu
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from 'react-router-dom';
 const Icons = () => {
   return (
     <div className='flex items-center'>
-      <IconButton>
-        <HomeIcon />
-      </IconButton>
+      <Link to={"/"}>
+        <IconButton>
+          <HomeIcon />
+        </IconButton>
+      </Link>
+      <Link to={"/message"}>
       <IconButton>
         <MapsUgcOutlinedIcon />
       </IconButton>
+      </Link>
       <IconButton>
         <AddCircleOutlineOutlinedIcon />
       </IconButton>
+      <Link to={"/explore"}>
       <IconButton>
         <ExploreOutlinedIcon />
       </IconButton>
+      </Link>
       <IconButton>
         <FavoriteBorderOutlinedIcon />
       </IconButton>
