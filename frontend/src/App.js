@@ -9,11 +9,11 @@ import Explore from "./Components/Explore/Explore";
 
 function App() {
   return (
-    <div className="bg-gray-100 " >
+    <div className="bg-gray-100 min-h-screen" >
       <div className="bg-white">
         <Header />
       </div>
-      <div className="max-w-4xl mx-auto min-h-screen">
+      <div className="max-w-4xl mx-auto h-full">
         <Switch>
           <Route exact path="/explore" component={Explore} />
           <Route  path="/message" component={Messages} />
