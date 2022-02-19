@@ -3,7 +3,7 @@ import SentimentSatisfiedAltOutlinedIcon from '@mui/icons-material/SentimentSati
 import { IconButton } from '@mui/material';
 const Messanger = () => {
     return (
-        <>
+        <div className='w-full'>
             <div className='h-16 p-3 border-b '>
                 <div className='flex '>
                     <div>
@@ -12,21 +12,21 @@ const Messanger = () => {
                     <span className='text-xs font-semibold px-2'>kullanıcı Adı </span>
                 </div>
             </div>
-            <div>
-                <div className='absolute w-full bottom-0 p-5'>
-                    <div className='w-full p-1 rounded-full border items-center flex'>
-                        <IconButton>
-                            <SentimentSatisfiedAltOutlinedIcon />
-                        </IconButton>
-                        <input className='outline-none' placeholder='Mesaj yaz...' />
-                    </div>
-
-
+            <div className='mt-5'>
+                <div className='px-10'>
+                    
                 </div>
-
+            </div>
+            <div className='absolute w-full bottom-0 p-5'>
+                <div className='w-full p-1 rounded-full border items-center flex'>
+                    <IconButton>
+                        <SentimentSatisfiedAltOutlinedIcon />
+                    </IconButton>
+                    <input className='outline-none' placeholder='Mesaj yaz...' />
+                </div>
             </div>
 
-        </>
+        </div>
     )
 }
 
