@@ -50,3 +50,13 @@ export const deleteUser = (req, res) => {
         }
     }).catch(err => res.send(err));
 }
+export const getUser = (req, res) => {
+    const { _id } = req.params;
+    User.findById(_id).then(user => {
+        if (user) {
+            res.send(user);
+        } else {
+            res.send("User Not Found");
+        }
+    }).catch(err => res.send(err));
+}

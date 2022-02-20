@@ -1,11 +1,9 @@
 import mongoose from "mongoose";
 
-const commentSchema = new mongoose.Schema({
-    author:{
+
+const likeSchema = new mongoose.Schema({
+    whoLikes: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
-    },
-    comment: {
-        type: String,
     }
-})
+});
