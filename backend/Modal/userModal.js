@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-const UserSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name: String,
     password: String,
     email: String,
@@ -9,6 +9,6 @@ const UserSchema = new mongoose.Schema({
     isActive: Boolean,
 });
 
-export default UserSchema
+const User = mongoose.model("User", userSchema)
 
-modulee.exports = mongoose.model("User", UserSchema);
+export default User;

@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import userRuter from "./Routes/userRouter.js";
 
 
 // Env Config
@@ -20,7 +21,7 @@ app.use(cors());
 app.get("/", (req, res) => {
     res.send("<h1>Hello World</h1>");
 })
-
+app.use("/user", userRuter);
 
 // DB Config
 mongoose.connect(process.env.MONODB_CONNECTION_URL, {
