@@ -15,11 +15,18 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
+//APP Route
+
+app.get("/", (req, res) => {
+    res.send("<h1>Hello World</h1>");
+})
+
+
 // DB Config
 mongoose.connect(process.env.MONODB_CONNECTION_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-})
+}).then(console.log("Database Connected")).catch(err => console.log(err));
 
 
 
