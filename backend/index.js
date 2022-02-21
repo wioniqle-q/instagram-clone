@@ -4,6 +4,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import userRuter from "./Routes/userRouter.js";
+import messageRouter from "./Routes/messageRouter.js";
 
 
 // Env Config
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
     res.send("<h1>Hello World</h1>");
 })
 app.use("/user", userRuter);
+app.use("/message", messageRouter);
 
 // DB Config
 mongoose.connect(process.env.MONODB_CONNECTION_URL, {

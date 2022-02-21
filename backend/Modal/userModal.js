@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 
 const userSchema = new mongoose.Schema({
-    name:{
-        type:String,
-        unique:true,
-        required:true,
+    name: {
+        type: String,
+        unique: true,
+        required: true,
     },
     password: String,
     email: {
@@ -17,6 +17,12 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    message: [
+        {
+            type: mongoose.Schema.ObjectId,
+            ref: "Message",
+        }
+    ],
     isActive: Boolean,
 });
 
