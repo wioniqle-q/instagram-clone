@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
         }
     ],
     isActive: Boolean,
-});
+}, { minimize: false, collection: 'User' });
 
 const User = mongoose.model("User", userSchema)
 
